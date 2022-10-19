@@ -1,6 +1,7 @@
 [![PHPStan](https://github.com/wimski/soap-ntlm/actions/workflows/phpstan.yml/badge.svg)](https://github.com/wimski/soap-ntlm/actions/workflows/phpstan.yml)
 [![PHPUnit](https://github.com/wimski/soap-ntlm/actions/workflows/phpunit.yml/badge.svg)](https://github.com/wimski/soap-ntlm/actions/workflows/phpunit.yml)
 [![Coverage Status](https://coveralls.io/repos/github/wimski/soap-ntlm/badge.svg?branch=master)](https://coveralls.io/github/wimski/soap-ntlm?branch=master)
+[![Latest Stable Version](http://poser.pugx.org/wimski/soap-ntlm/v)](https://packagist.org/packages/wimski/soap-ntlm)
 
 # Soap with NTLM
 
