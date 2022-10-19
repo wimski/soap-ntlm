@@ -20,8 +20,7 @@ class NtlmStreamTest extends TestCase
     {
         parent::setUp();
 
-        $curlResourceFactory = $this->createMock(CurlResourceFactoryInterface::class);
-        $this->curlResourceFactory = $curlResourceFactory;
+        $this->curlResourceFactory = $this->createMock(CurlResourceFactoryInterface::class);
 
         $this->stream = new NtlmStream();
     }
@@ -144,7 +143,10 @@ class NtlmStreamTest extends TestCase
 
     protected function setStaticValues(): void
     {
-        NtlmStream::setCurlResourceFactory($this->curlResourceFactory);
+        /** @var CurlResourceFactoryInterface $curlResourceFactory */
+        $curlResourceFactory = $this->curlResourceFactory;
+
+        NtlmStream::setCurlResourceFactory($curlResourceFactory);
         NtlmStream::setCredentials('user', 'pass');
     }
 
